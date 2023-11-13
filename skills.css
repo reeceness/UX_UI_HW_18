@@ -18,40 +18,114 @@
 
 .navbar {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .75fr .25fr;
     padding: 50px;
+    text-decoration: none;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    gap: 20px;
 }
 
 .myskills {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr .5fr 1.5fr;
+    grid-template-columns: 1fr 1fr 1fr;    
     padding: 50px;
-    gap: 20px;
-    text-align: center;
+    gap: 40px;
+    text-align: justify;
 }
 
 .user-research {
-    display: flexbox;
-    flex-direction: column;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 24;
 }
 
 .user-interface {
-    display: flexbox;
-    flex-direction: column;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .dev {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    height: 100%;
+}
+
+.skillheader {
+    color: #FFF;
+    text-align: auto;
+    font-family: Altone;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 10.24px;
+    padding-left: 175px;
+}
+
+.project1, .project-1-head {
+    display: grid;
+    grid-template-columns: .4fr .6fr;    
+    padding: 50px;
+    gap: 40px;
+    text-align: justify;
+}
+
+.project-1-body {
+    color: #FFFEF3;
+    text-align: justify;
+    font-family: Altone;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 175%; /* 56px */
+    letter-spacing: 3.2px;
 }
 
 body {
     background: #030618;
 }
-/* Media query for responsiveness - adjust as needed */
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Switch to a single column on smaller screens */
-    }
+
+.footer {
+    display: inline-flex;
+    flex-direction: row;    
+    padding: 50px;
+    text-decoration: none;
+    gap: 20px;
 }
+
+.footerli {
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;    
+    text-decoration: none;
+    gap: 20px;
+    padding: 50px;  
+}
+
+.logosm {
+    padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+    .myskills {
+      grid-template-columns: 1fr;
+    }
+    .skillheader, .project-1-head {
+        text-align: center;
+        padding: 0;
+    }
+  }
