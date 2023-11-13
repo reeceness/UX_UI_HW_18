@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Altone;
+    src: url(../Altone-2/Open_Type-TT/Altone-Regular.ttf); 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Altone;
+    src: url(../Altone-2/Open\ Type-TT/Altone-Bold.ttf); 
+    font-weight: bold;
+}
+
+* {
+    font-family: Altone;
+    color: white;
+    padding: 0;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+}
+
+.myskills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr .5fr 1.5fr;
+    padding: 50px;
+    gap: 20px;
+    text-align: center;
+}
+
+.user-research {
+    display: flexbox;
+    flex-direction: column;
+}
+
+.user-interface {
+    display: flexbox;
+    flex-direction: column;
+}
+
+.dev {
+    display: flexbox;
+    flex-direction: column;
+}
+
+body {
+    background: #030618;
+}
+/* Media query for responsiveness - adjust as needed */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Switch to a single column on smaller screens */
+    }
+}
